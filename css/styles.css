@@ -1,14 +1,33 @@
 /*FUENTES*/
-  @font-face{
-      font-family: "nevis";
-      src: url("fonts/nevis.eot");
-      src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+@font-face{
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
         url("fonts/nevis.woff") format("woff"),
         url("fonts/nevis.ttf") format("truetype"),
         url("fonts/nevis.svg") format("svg");
     font-weight: normal;
     font-style: normal;
-  }
+}
+
+@font-face{
+    font-family: "fajala";
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    src: url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot#iefix") format("embedded-opentype"),
+        url("fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /*ESTILOS GENERALES*/
 *{
@@ -30,6 +49,12 @@ a:hover{
     font-weight: bolder;
 }
 
+.icon{
+    font-family: icons;
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
 
 
 /*FORMULARIO*/
@@ -228,7 +253,6 @@ header h1 a{
 /*Barra Lateral*/
 
 #aside, #frase{
-    clear: both;
     width: 210px;
     float: left;
     margin: 30px;
@@ -328,6 +352,66 @@ aside h3{
     clear: both;
     padding-left: 30px;
     padding-bottom: 20px;
+}
+
+/*-------------------------------------------------*/
+
+
+
+
+/*--------------------SECCIONES--------------------*/
+
+#sections{
+    float: right;
+    width: 75%;
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+
+#sections .titulo{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: fajala;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;    
+    color: rgb(0, 151, 0);
+}
+
+#sections section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#sections .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sections .date{
+    color: gray;
+    font-size: 14px;
+}
+
+#sections .stickerOne,
+#sections .stickerTwo{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#sections .stickerTwo{
+    margin-left: 860px;
 }
 
 /*-------------------------------------------------*/
